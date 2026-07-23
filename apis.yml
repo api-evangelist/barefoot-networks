@@ -1,8 +1,28 @@
 aid: barefoot-networks
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/barefoot-networks.png
 name: Barefoot Networks
-description: Barefoot Networks is a company surfaced as a portfolio company of a16z, lightspeed-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: Barefoot Networks was a computer-networking company founded in 2013 in
+  Santa Clara, California, that designed and produced programmable network-switch silicon,
+  systems, and software. Its flagship Tofino Intelligent Fabric Processor was the first
+  end-user-programmable Ethernet switch ASIC, built on the Protocol Independent Switch
+  Architecture (PISA) and programmed with the P4 language at line rates up to 12.8 Tbit/s.
+  Developer tooling spanned the P4 Studio SDK, the Barefoot Runtime Interface (BRI)
+  control-plane API, and the Tofino Native Architecture (TNA). Intel acquired Barefoot
+  Networks in June 2019, folding the technology into Intel Tofino / Intel Intelligent
+  Fabric Processors; the barefootnetworks.com corporate site now redirects into Intel,
+  and the surviving open documentation lives in the barefootnetworks GitHub organization
+  (notably the Open-Tofino repository publishing the public TNA and P4 architecture docs).
 url: https://raw.githubusercontent.com/api-evangelist/barefoot-networks/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,14 +31,37 @@ x-backed-by:
 - lightspeed-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: Intel
+x-acquired-year: '2019'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Networking
+- Switches
+- P4
+- Programmable Networking
+- SDN
+- Silicon
+- Data Plane
+- Intel
 apis: []
+common:
+- type: GitHubOrganization
+  url: https://github.com/barefootnetworks
+- type: Documentation
+  url: https://github.com/barefootnetworks/Open-Tofino
+- type: SourceCode
+  url: https://github.com/barefootnetworks/Open-Tofino
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
