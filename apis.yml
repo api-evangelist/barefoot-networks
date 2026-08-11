@@ -49,6 +49,8 @@ tags:
 - Intel
 apis: []
 common:
+- type: IssueTracker
+  url: https://github.com/barefootnetworks/Open-Tofino/issues
 - type: GitHubOrganization
   url: https://github.com/barefootnetworks
 - type: Documentation
